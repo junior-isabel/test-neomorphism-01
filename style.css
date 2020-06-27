@@ -1,0 +1,82 @@
+html {
+    background-color: #3D4460;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neom {
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 12px;
+    box-shadow: -4px -2px 8px rgba(255, 255, 255, 0.637), 4px 5px 8px #000;
+    position: relative;
+    cursor: pointer;
+}
+.circle {
+  border-radius: 100%;
+}
+.blue-light {
+  box-shadow: -4px -12px 38px -5px rgba(0, 153, 255, 0.863), 4px 5px 18px 2px #041146;
+}
+.square {
+  border-radius: 10px;
+}
+.angle-60 {
+  transform: rotate(45deg);
+  margin: 0 24px;
+}
+.box {
+  width: 500px;
+  height: 300px;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play::before, .back::before, .next::before, .back::after, .next::after {
+    content: '';
+    position: absolute;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: rgb(184, 184, 184);
+}
+.back::before {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-110%) translateY(-50%) rotate(90deg);
+}
+.back::after {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-60%) translateY(-50%) rotate(90deg);
+}
+
+.next::before {
+    left: 50%;
+    top: 50%;
+    transform: translateX(0%) translateY(-50%) rotate(-90deg);
+}
+.next::after {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-55%) translateY(-50%) rotate(-90deg);
+}
+
+.play::before {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-30%) translateY(-50%) rotate(-90deg);
+}
+
+
+.neom:hover, .neom.active {
+    box-shadow: inset 5px 5px 8px #000, inset -5px -5px 8px rgba(255, 255, 255, 0.39);
+}
+.blue-light:hover {
+  box-shadow: inset 2px 5px 8px  #041146, inset -4px -5px 8px rgba(7, 128, 209, 0.692);
+}
