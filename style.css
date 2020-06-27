@@ -44,35 +44,26 @@ body {
     border-style: solid;
     border-color: transparent;
     border-top-color: rgb(184, 184, 184);
-}
-.back::before {
     left: 50%;
     top: 50%;
+}
+.back::before {
     transform: translateX(-110%) translateY(-50%) rotate(90deg);
 }
 .back::after {
-    left: 50%;
-    top: 50%;
     transform: translateX(-60%) translateY(-50%) rotate(90deg);
 }
 
 .next::before {
-    left: 50%;
-    top: 50%;
     transform: translateX(0%) translateY(-50%) rotate(-90deg);
 }
 .next::after {
-    left: 50%;
-    top: 50%;
     transform: translateX(-55%) translateY(-50%) rotate(-90deg);
 }
 
 .play::before {
-  top: 50%;
-  left: 50%;
   transform: translateX(-30%) translateY(-50%) rotate(-90deg);
 }
-
 
 .neom:hover, .neom.active {
     box-shadow: inset 5px 5px 8px #000, inset -5px -5px 8px rgba(255, 255, 255, 0.39);
